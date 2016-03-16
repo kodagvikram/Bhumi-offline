@@ -1,0 +1,526 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#396094" >
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/icon_nevigation"
+                    android:textColor="@android:color/white"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/alluserstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="SCALE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/applogoimage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/myscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout" >
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/CLEARBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:layout_marginRight="25dp"
+                    android:text="CLEAR"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+                 <TextView
+                        android:id="@+id/AAkarfodtextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_alignParentLeft="true"
+                       android:layout_marginLeft="70dp"
+                       android:layout_marginRight="02dp"
+                         android:layout_marginTop="10dp"
+                       android:gravity="center"
+                        android:text="Metric Mapan"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                <RelativeLayout
+                    android:id="@+id/AAkarupperlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AAkarfodtextview"
+                    android:layout_marginTop="07dp"
+                     >
+
+                    <TextView
+                        android:id="@+id/AAkarfodtextview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_alignParentLeft="true"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginRight="02dp"
+                       android:gravity="center"
+                        android:text="On Paper"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                    
+                     <TextView
+                        android:id="@+id/AAkarfodtextview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview1"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT2"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT2"
+                       android:gravity="center"
+                        android:text="      :         : "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT2"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="07dp"
+                        android:layout_below="@+id/AAkarfodtextview1"
+                      android:layout_alignParentLeft="true"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:focusable="false"
+                        android:text="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                    
+                   
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT3"
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/AAkarfodtextview1"
+                   android:layout_toRightOf="@+id/AAkarfodtextview7"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                    
+                    
+                    
+                    
+                     <EditText
+                        android:id="@+id/AAKARFODEDITTEXT4"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="07dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT2"
+                      android:layout_alignParentLeft="true"
+                        android:background="@drawable/roundes_edittext_border"
+                           android:focusable="false"
+                        android:text="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                    
+                    <TextView
+                        android:id="@+id/AAkarfodtextview7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview5"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT4"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT4"
+                       android:gravity="center"
+                        android:text="Milimeter  : "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                    
+                    
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT5"
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT3"
+                   android:layout_toRightOf="@+id/AAkarfodtextview7"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/AAkarfodtextview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/AAkarfodtextview7"
+                        android:text="On Ground"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                    
+                    <TextView
+                        android:id="@+id/AAkarfodtextview8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview5"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT5"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT5"
+                       android:gravity="center"
+                        android:text="Meter "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                    
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT6"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="07dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT5"
+                      android:layout_alignParentLeft="true"
+                        android:background="@drawable/roundes_edittext_border"
+                           android:focusable="false"
+                        android:text="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                    
+                    <TextView
+                        android:id="@+id/AAkarfodtextview9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview5"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT6"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT6"
+                       android:gravity="center"
+                        android:text="Milimeter  : "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                    
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT7"
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT5"
+                   android:layout_toRightOf="@+id/AAkarfodtextview7"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                    
+                    <TextView
+                        android:id="@+id/AAkarfodtextview10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview8"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT7"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT7"
+                       android:gravity="center"
+                        android:text="Foot "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+                
+                
+                <RelativeLayout 
+                    android:id="@+id/dlublelinelayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/AAkarupperlayout"
+                    android:background="@drawable/lightborder"
+                    ></RelativeLayout>
+                 
+                 <RelativeLayout 
+                    android:id="@+id/dlublelinelayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerHorizontal="true"
+                       android:layout_below="@+id/dlublelinelayout"
+                   
+                    android:background="@drawable/lightborder"
+                    ></RelativeLayout>
+            
+                 <TextView
+                        android:id="@+id/AAkarfodtextview12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_alignParentLeft="true"
+                       android:layout_below="@+id/dlublelinelayout2"
+                       android:layout_marginLeft="70dp"
+                       android:layout_marginRight="02dp"
+                         android:layout_marginTop="06dp"
+                       android:gravity="center"
+                        android:text="British Mapan"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                 
+                 <RelativeLayout
+                     android:id="@+id/BELOWAAkarupperlayout"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/AAkarfodtextview12"
+                     android:layout_marginTop="07dp" >
+
+                     <TextView
+                         android:id="@+id/AAkarfodtextview13"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_marginLeft="30dp"
+                         android:layout_marginRight="02dp"
+                         android:gravity="center"
+                         android:text="On Paper"
+                         android:textColor="#000000"
+                         android:textSize="18dp" />
+                     
+                     <EditText
+                        android:id="@+id/AAKARFODEDITTEXT20"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="06dp"
+                        android:layout_below="@+id/AAkarfodtextview13"
+                      android:layout_alignParentLeft="true"
+                        android:background="@drawable/roundes_edittext_border"
+                           android:focusable="false"
+                        android:text="1"
+                        android:textSize="18sp"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                    
+                     <TextView
+                        android:id="@+id/AAkarfodtextview20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview13"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT20"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT20"
+                       android:gravity="center"
+                        android:text="  Inchs      : "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                     
+                     <TextView
+                        android:id="@+id/AAkarfodtextview21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/AAkarfodtextview20"
+                        android:text="On Ground"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                     
+                     <EditText
+                        android:id="@+id/AAKARFODEDITTEXT22"
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/AAkarfodtextview13"
+                   android:layout_toRightOf="@+id/AAkarfodtextview22"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                     
+                     <TextView
+                        android:id="@+id/AAkarfodtextview30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview21"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT22"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT22"
+                       android:gravity="center"
+                        android:text="Sakhali "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                     
+                     <EditText
+                        android:id="@+id/AAKARFODEDITTEXT23"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="07dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT20"
+                      android:layout_alignParentLeft="true"
+                        android:background="@drawable/roundes_edittext_border"
+                           android:focusable="false"
+                        android:text="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                     
+                     <TextView
+                        android:id="@+id/AAkarfodtextview22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview21"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT23"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT23"
+                       android:gravity="center"
+                        android:text="Milimeter  : "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                     
+                     
+                     <EditText
+                        android:id="@+id/AAKARFODEDITTEXT24"
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT22"
+                   android:layout_toRightOf="@+id/AAkarfodtextview22"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                     
+                     <TextView
+                        android:id="@+id/AAkarfodtextview23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview21"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT24"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT24"
+                       android:gravity="center"
+                        android:text="Meter "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                     
+                     <EditText
+                        android:id="@+id/AAKARFODEDITTEXT25"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="07dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT23"
+                      android:layout_alignParentLeft="true"
+                        android:background="@drawable/roundes_edittext_border"
+                           android:focusable="false"
+                        android:text="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                     
+                     <TextView
+                        android:id="@+id/AAkarfodtextview24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview22"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT25"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT25"
+                       android:gravity="center"
+                        android:text="Milimeter  : "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                   
+                     <EditText
+                        android:id="@+id/AAKARFODEDITTEXT26"
+                        android:layout_width="85dp"
+                        android:layout_height="55dp"
+                      android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/AAKARFODEDITTEXT23"
+                   android:layout_toRightOf="@+id/AAkarfodtextview24"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                     
+                     <TextView
+                        android:id="@+id/AAkarfodtextview25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_below="@+id/AAkarfodtextview23"
+                      android:layout_toRightOf="@+id/AAKARFODEDITTEXT26"
+                       android:layout_marginRight="02dp"
+                       android:layout_alignBaseline="@+id/AAKARFODEDITTEXT26"
+                       android:gravity="center"
+                        android:text="Foot "
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                     
+                 </RelativeLayout>
+            
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

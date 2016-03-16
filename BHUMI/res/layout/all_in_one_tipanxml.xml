@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#396094" >
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/icon_nevigation"
+                    android:textColor="@android:color/white"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/alluserstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="AREA OF TIPAN AS JANTRI"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/applogoimage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+                   <RelativeLayout 
+                    android:id="@+id/BOTTOMLAYOUT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView 
+                        android:id="@+id/SAMLAMBIMAGEVIEW"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/projectrectangleimage"
+                        android:layout_centerVertical="true"
+                          android:layout_centerHorizontal="true"
+                        />
+                        
+                        <ImageView 
+                        android:id="@+id/JANTRITRIANGLEIMAGEVIEW"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/SAMLAMBIMAGEVIEW"
+                        android:background="@drawable/projecttriangleimg"
+                        android:layout_centerVertical="true"
+                       
+                        />
+                        
+                        <ImageView 
+                        android:id="@+id/TIPANTRIANGLEIMAGEVIEW"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/SAMLAMBIMAGEVIEW"
+                        android:background="@drawable/newtriangle"
+                        android:layout_centerVertical="true"
+                        />
+
+                  <TextView
+                      android:id="@+id/outputtextview1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/SAMLAMBIMAGEVIEW"
+                      android:layout_toLeftOf="@+id/JANTRITRIANGLEIMAGEVIEW"
+                      android:layout_toRightOf="@+id/TIPANTRIANGLEIMAGEVIEW"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginRight="1dp"
+                      android:text="Area of Parallolgram"
+                      android:textColor="#000000"
+                      android:textSize="17dp" />
+                  
+                  <TextView
+                      android:id="@+id/outputtextview2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/SAMLAMBIMAGEVIEW"
+                      android:layout_toLeftOf="@+id/SAMLAMBIMAGEVIEW"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="5dp"
+                      android:text="Area of Triangle"
+                      android:textColor="#000000"
+                      android:textSize="17dp" />
+                  
+                  <TextView
+                      android:id="@+id/outputtextview3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/SAMLAMBIMAGEVIEW"
+                      android:layout_toRightOf="@+id/SAMLAMBIMAGEVIEW"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="5dp"
+                      android:text="Area of Right Triangle"
+                      android:textColor="#000000"
+                      android:textSize="17dp" />
+                        
+                </RelativeLayout>               
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#396094" >
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="35dp"
+                    android:text="@string/icon_nevigation" 
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/alluserstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="JANTRI"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/applogoimage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/myscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout" >
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+                
+                 <Button
+                    android:id="@+id/CLEARBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:text="CLEAR"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    />
+                     <Button
+                    android:id="@+id/BACKBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@+id/CLEARBTN"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:text="BACK"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/jantritextview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/CLEARBTN"
+                    android:text="Sakhali"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/jantriinput1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/jantritextview1"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:digits="0123456789"
+                     android:gravity="center"
+                     ><requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/jantridelta"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/jantriinput1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/deltaimage" />
+
+                <TextView
+                    android:id="@+id/jantritextview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jantridelta"
+                    android:layout_centerHorizontal="true"
+                    android:text="Aane"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/jantriinput2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/jantritextview2"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                      android:maxLength="2"
+                    android:digits="0123456789"
+                     >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/jantritextview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jantriinput2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Output: in Meter"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/jantrioutput"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/jantritextview3"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:inputType="numberDecimal"
+                     android:gravity="center"
+                     android:focusable="false"
+                     >
+                </EditText>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

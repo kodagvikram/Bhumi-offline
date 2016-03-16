@@ -1,0 +1,338 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#396094" >
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/icon_nevigation"
+                    android:textColor="@android:color/white"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/alluserstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="DIVIDED BY AAKAR"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/applogoimage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/myscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout" >
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp" >
+               <Button
+                    android:id="@+id/CLEARBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:layout_marginRight="25dp"
+                    android:text="CLEAR"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+                
+                <RelativeLayout
+                    android:id="@+id/AAkarupperlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                     >
+
+                    <TextView
+                        android:id="@+id/AAkarfodtextview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_toLeftOf="@+id/AAKARFODtextview1"
+                       android:layout_marginRight="02dp"
+                       android:gravity="center"
+                        android:text="Area in Hectare"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/AAkarfodtextview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Aakar in Rupees"
+                        android:layout_toRightOf="@+id/AAKARFODtextview1"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/AAKARFODtextview1"
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/AAkarfodtextview1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT1"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_below="@+id/AAkarfodtextview1"
+                        android:layout_toRightOf="@+id/AAKARFODtextview1"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT2"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_below="@+id/AAkarfodtextview1"
+                        android:layout_toLeftOf="@+id/AAKARFODtextview1"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+                </RelativeLayout>
+                
+                
+                <RelativeLayout 
+                    android:id="@+id/dlublelinelayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/AAkarupperlayout"
+                    android:background="@drawable/lightborder"
+                    ></RelativeLayout>
+                 
+                 <RelativeLayout 
+                    android:id="@+id/dlublelinelayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerHorizontal="true"
+                       android:layout_below="@+id/dlublelinelayout"
+                   
+                    android:background="@drawable/lightborder"
+                    ></RelativeLayout>
+            
+             <RelativeLayout
+                    android:id="@+id/AAkarbelowlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_below="@+id/dlublelinelayout2"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/AAkarfodtextview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Aakar in Rupees"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@+id/AAKARFODtextview2"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/AAKARFODtextview2"
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/AAkarfodtextview3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT3"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_below="@+id/AAkarfodtextview3"
+                        android:layout_toRightOf="@+id/AAKARFODtextview2"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:layout_marginRight="30dp"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/AAKARFODEDITTEXT4"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_below="@+id/AAkarfodtextview3"
+                        android:layout_toLeftOf="@+id/AAKARFODtextview2"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:layout_marginLeft="30dp"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/AAkarfodtextview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="02dp"
+                        android:layout_toLeftOf="@+id/AAKARFODtextview2"
+                        android:gravity="center"
+                        android:text="Area in Hectare"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+            
+             <RelativeLayout 
+                    android:id="@+id/dlublelinelayout3"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/AAkarbelowlayout"
+                    android:background="@drawable/lightborder"
+                    ></RelativeLayout>
+                 
+                 <RelativeLayout 
+                    android:id="@+id/dlublelinelayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerHorizontal="true"
+                       android:layout_below="@+id/dlublelinelayout3"
+                   
+                    android:background="@drawable/lightborder"
+                    ></RelativeLayout>
+            
+             <RelativeLayout
+                    android:id="@+id/AAkarLastlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_below="@+id/dlublelinelayout4"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/newAAkarfodtextview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Aakar in Rupees"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@+id/newAAKARFODtextview2"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/newAAKARFODtextview2"
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/newAAkarfodtextview3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/newAAKARFODEDITTEXT3"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_below="@+id/newAAkarfodtextview3"
+                        android:layout_toRightOf="@+id/newAAKARFODtextview2"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:layout_marginRight="30dp"
+                        android:focusable="false"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/newAAKARFODEDITTEXT4"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_below="@+id/newAAkarfodtextview3"
+                        android:layout_toLeftOf="@+id/newAAKARFODtextview2"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:layout_marginLeft="30dp"
+                        android:focusable="false"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/newAAkarfodtextview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="02dp"
+                        android:layout_toLeftOf="@+id/newAAKARFODtextview2"
+                        android:gravity="center"
+                        android:text="Area in Hectare"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+             
+            
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

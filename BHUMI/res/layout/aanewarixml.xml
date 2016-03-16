@@ -1,0 +1,351 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#396094" >
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/icon_nevigation"
+                    android:textColor="@android:color/white"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/alluserstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="AANEWARI"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/applogoimage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+       <ScrollView
+            android:id="@+id/myscrollview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout" >
+              <RelativeLayout
+                android:id="@+id/mainlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+           
+        
+        <ScrollView
+            android:id="@+id/myscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+                
+                <Button
+                    android:id="@+id/CLEARBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:text="CLEAR"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/HECTERINPUT1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/HECTAREtextview1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="90dp"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:inputType="numberDecimal" 
+                    android:gravity="center"
+                    > <requestFocus /></EditText>
+
+                <TextView
+                    android:id="@+id/HECTAREtextview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Area in Are"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/HECTAREtextview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HECTAREtextview3"
+            android:layout_alignBottom="@+id/HECTAREtextview3"
+            android:layout_alignRight="@+id/HECTERoutput2"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/HECTERoutput2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/HECTAREtextview4"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/HECTERdelta3"
+            android:background="@drawable/roundes_edittext_border"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+             android:gravity="center"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/HECTERoutput1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/HECTAREtextview3"
+            android:layout_toLeftOf="@+id/HECTERdelta"
+            android:layout_toRightOf="@+id/HECTERdelta2"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundes_edittext_border"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+             android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/HECTERINPUT4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/HECTAREtextview5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+             android:focusable="false"
+            android:background="@drawable/roundes_edittext_border"
+            android:ems="10"
+             android:gravity="center|bottom"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/HECTAREtextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myscrollview"
+            android:layout_toLeftOf="@+id/HECTERdelta"
+            android:text="   "
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/HECTERdelta3"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/HECTERoutput2"
+            android:layout_toRightOf="@+id/HECTERdelta"
+            android:src="@drawable/deltaimage" />
+
+        <ImageView
+            android:id="@+id/HECTERdelta"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/HECTERdelta3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/deltaimage" />
+
+        <TextView
+            android:id="@+id/HECTAREtextview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/HECTAREtextview2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:text="Aanewari"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/AAnelayout25"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/HECTERINPUT4"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lightborder"
+            />
+
+
+         <TextView
+             android:id="@+id/AAnetextview1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/AAnelayout25"
+             android:layout_centerHorizontal="true"
+             android:text="Area in Are"
+             android:textColor="#000000"
+             android:textSize="20dp" />
+
+         <EditText
+             android:id="@+id/AAneeditext1"
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:layout_marginLeft="100dp"
+             android:layout_marginRight="100dp"
+             android:layout_below="@+id/AAnetextview1"
+             android:background="@drawable/roundes_edittext_border"
+             android:maxLength="4"
+             android:ems="10"
+             android:gravity="center"
+             android:inputType="numberDecimal" />
+
+         <TextView
+             android:id="@+id/AAnetextview2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/AAneeditext1"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="2dp"
+             android:text="out of Area in Are"
+             android:textColor="#000000"
+             android:textSize="18dp" />
+
+         <EditText
+             android:id="@+id/AAneeditext2"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_below="@+id/AAnetextview2"
+             android:layout_marginTop="1dp"
+             android:layout_marginLeft="100dp"
+             android:layout_marginRight="100dp"
+             android:background="@drawable/roundes_edittext_border"
+              android:maxLength="4"
+             android:ems="10"
+             android:gravity="center|left"
+             android:inputType="numberDecimal" />
+
+            <ImageView
+                android:id="@+id/AANEdelta1"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/AAneeditext2"
+                android:layout_toRightOf="@+id/HECTERdelta"
+                android:src="@drawable/deltaimage" />
+
+            <ImageView
+                android:id="@+id/AANEdelta5"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                 android:layout_below="@+id/AAneeditext2"
+                android:layout_alignRight="@+id/HECTERdelta"
+                android:layout_alignTop="@+id/AANEdelta1"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/deltaimage" />
+
+  <ImageView
+      android:id="@+id/AANEdelta6"
+      android:layout_width="15dp"
+      android:layout_height="40dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignTop="@+id/AANEdelta5"
+      android:layout_marginLeft="3dp"
+      android:src="@drawable/deltaimage" />
+
+  <EditText
+      android:id="@+id/AAneeditext3"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_alignLeft="@+id/HECTERoutput1"
+      android:layout_alignRight="@+id/HECTERoutput1"
+      android:layout_alignTop="@+id/AANEdelta6"
+      android:background="@drawable/roundes_edittext_border"
+      android:focusable="false"
+      android:ems="10"
+      android:gravity="center|left"
+      android:inputType="numberDecimal" />
+
+  <EditText
+      android:id="@+id/AAneeditext4"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_alignBaseline="@+id/AAneeditext3"
+      android:layout_alignBottom="@+id/AAneeditext3"
+      android:layout_alignLeft="@+id/HECTERoutput2"
+      android:background="@drawable/roundes_edittext_border"
+        android:layout_marginRight="10dp"
+         android:focusable="false"
+      android:ems="10"
+      android:gravity="center|left"
+      android:inputType="numberDecimal" />
+
+  <ImageView
+      android:id="@+id/HECTERdelta2"
+      android:layout_width="15dp"
+      android:layout_height="40dp"
+      android:layout_marginLeft="3dp"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/HECTAREtextview2"
+      android:src="@drawable/deltaimage" />
+
+  <TextView
+      android:id="@+id/HECTAREtextview5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/HECTERoutput2"
+      android:layout_centerHorizontal="true"
+      android:text="Output: in  Are"
+      android:textColor="#000000"
+      android:textSize="20dp" />
+
+   </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

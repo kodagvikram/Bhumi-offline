@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:background="@drawable/projectbackground"
+     >
+
+    
+     <RelativeLayout
+        android:id="@+id/SAKHALIAANE_MENU_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="05dp"
+        android:visibility="gone"
+                   >
+          <ScrollView
+            android:id="@+id/MENUmyscrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+             >
+
+            <RelativeLayout
+                android:id="@+id/MENUmainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:paddingBottom="20dp" >
+
+                <RelativeLayout
+                    android:id="@+id/MENUleftborder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/MENUCLEARBTN"
+                    android:background="@drawable/verticalborderxml"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                     android:paddingBottom="10dp"
+                     >
+
+                    <RelativeLayout
+                        android:id="@+id/MENUleftborder2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/verticalborderxml"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                         >
+
+                        <TextView
+                            android:id="@+id/MENUmideltextview"
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp" />
+
+                        <TextView
+                            android:id="@+id/MENUaanetextview5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/MENUHECTAREtextview6"
+                            android:layout_marginTop="5dp"
+                            android:text="Aane"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/MENUParentLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/MENUSaklitextview"
+                            android:layout_centerHorizontal="true" >
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/MENUdlublelinelayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/MENUParentLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/lightborder" >
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/MENUdlublelinelayout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/MENUdlublelinelayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/lightborder" >
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/MENUTrainglebtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/MENUdlublelinelayout2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/rounded_button_xml"
+                            android:paddingBottom="05dp"
+                            android:paddingTop="05dp"
+                            android:text="TOTAL"
+                            android:textColor="#ffffff"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/MENUHECTAREtextview6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/MENUTrainglebtn"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/MENUSAKLIDELDA"
+                            android:text="Aane"
+                            android:textColor="#000000"
+                            android:textSize="17dp" />
+
+                        <ImageView
+                            android:id="@+id/MENUSAKLIDELDA"
+                            android:layout_width="20dp"
+                            android:layout_height="55dp"
+                            android:layout_below="@+id/MENUHECTAREtextview5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/deltaimage" />
+
+                        <EditText
+                            android:id="@+id/MENUOUTPUTTRIANGLE"
+                            android:layout_width="90dp"
+                            android:layout_height="55dp"
+                            android:layout_below="@+id/MENUHECTAREtextview5"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="05dp"
+                            android:layout_toLeftOf="@+id/MENUSAKLIDELDA"
+                            android:background="@drawable/roundes_edittext_border"
+                            android:gravity="center"
+                            android:focusable="false"
+                            android:inputType="numberDecimal"
+                            android:text="0" 
+                            android:paddingBottom="15dp"
+                            >
+
+                        </EditText>
+                        
+                        <ImageView 
+                            android:layout_width="10dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/transparentimageicon"
+                            android:layout_below="@+id/MENUOUTPUTTRIANGLE"
+                            />
+
+                        <EditText
+                            android:id="@+id/MENUOUTPUTTRIANGLE2"
+                            android:layout_width="90dp"
+                            android:layout_height="55dp"
+                            android:layout_below="@+id/MENUHECTAREtextview5"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="05dp"
+                            android:layout_toRightOf="@+id/MENUSAKLIDELDA"
+                            android:background="@drawable/roundes_edittext_border"
+                            android:gravity="center"
+                             android:focusable="false"
+                            android:inputType="numberDecimal"
+                            android:text="0" 
+                            android:paddingBottom="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/MENUHECTAREtextview5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/MENUHECTAREtextview6"
+                            android:layout_alignBottom="@+id/MENUHECTAREtextview6"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/MENUSAKLIDELDA"
+                            android:text="Sakhali"
+                            android:textColor="#000000"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/MENUSaklitextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/MENUaanetextview5"
+                            android:layout_alignBottom="@+id/MENUaanetextview5"
+                            android:layout_alignRight="@+id/MENUOUTPUTTRIANGLE"
+                            android:text="Sakhali"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/MENUCLEARBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="01dp"
+                    android:paddingTop="05dp"
+                    android:text="CLEAR"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+         
+         
+     </RelativeLayout>         <!-- END OF SAKHALI AANE -->
+    
+    <RelativeLayout
+        android:id="@+id/Layoutmenubaar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="05dp" 
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/userimage"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/applogoimage"
+                 />
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/Chatusername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userimage"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="03dp"
+                android:text="welcome"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+
+        <ScrollView 
+            android:id="@+id/MENUSCROLLVIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:layout_below="@+id/imagelayout"
+            android:layout_marginTop="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="80dp"
+                >
+        <RelativeLayout
+            android:id="@+id/JANTRILayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_Dashboard"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="True"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/icon_dashboard"
+                android:textColor="@android:color/white"
+                android:textSize="35dp" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_Dashboard"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btn_Dashboard"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="JANTRI"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                customfontdemo:fontName="calibribold.ttf" />
+
+        </RelativeLayout>
+
+       
+        <RelativeLayout
+            android:id="@+id/HECTERTOGUNTHELAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JANTRILayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_guest"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_guest" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btn_guest"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="HECTARE TO ACRE\nGUNTHE AND VOICEVERSA"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+
+
+       
+        <RelativeLayout
+            android:id="@+id/ENLARGMENTLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HECTERTOGUNTHELAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_business"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_addbussiness" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_business"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_business"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_business"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="ENLARGMENT"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/SAMLAMBLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ENLARGMENTLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_BPM_Check_In"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_bpm" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_BPM_Check_In"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/btn_BPM_Check_In"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="AREA OF TIPAN\nAS JANTRI"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+       
+        <RelativeLayout
+            android:id="@+id/AANEWARILAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SAMLAMBLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_recruit"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="True"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/icon_newrecrut"
+                android:textColor="@android:color/white"
+                android:textSize="35dp" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_recruit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_recruit"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_recruit"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="7 * 12 AANEWARI"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+        
+       
+        
+         <RelativeLayout
+            android:id="@+id/TRIANGLELANDLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AANEWARILAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_logout" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_logout"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_logout"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:text="AREA OF TRIANGLE \n SCALE IN 1:1000...."
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+        
+         <RelativeLayout
+            android:id="@+id/VASALEVARLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TRIANGLELANDLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_VASALEVAR"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_VASALEVAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_VASALEVAR"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_VASALEVAR"
+                android:gravity="left"
+                android:layout_centerVertical="true"
+                android:text="VASALEVAR SCALE IN\n1:1000...."
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+        
+         
+          <RelativeLayout
+            android:id="@+id/MAZASORTCUTLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/VASALEVARLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_MAZASORTCUT"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_MAZASORTCUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_MAZASORTCUT"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_MAZASORTCUT"
+                android:gravity="left"
+                android:layout_centerVertical="true"
+                android:text="MAJHA SHORTCUT I"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+         
+          <RelativeLayout
+            android:id="@+id/NEWMAZASORTCUTLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MAZASORTCUTLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_NEWMAZASORTCUT"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_NEWMAZASORTCUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_NEWMAZASORTCUT"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_NEWMAZASORTCUT"
+                android:gravity="left"
+                android:layout_centerVertical="true"
+                android:text="MAJHA SHORTCUT II"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+          
+          <RelativeLayout
+            android:id="@+id/SORTCUTLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NEWMAZASORTCUTLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_SORTCUT"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_SORTCUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_SORTCUT"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_SORTCUT"
+                android:gravity="left"
+                android:layout_centerVertical="true"
+                android:text="RE-ADJUSTMENT SHORTCUT"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+        
+           <RelativeLayout
+            android:id="@+id/SCALELAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SORTCUTLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_SCALE"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_logout" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_SCALE"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_SCALE"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/btn_SCALE"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:text="SCALE"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+         
+           <RelativeLayout
+            android:id="@+id/ADDACREGUNTHELAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SCALELAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_ADDACRE"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_ADDACRE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_ADDACRE"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_ADDACRE"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="ADDITION OF\nACRE GUNTHE"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+          
+           <RelativeLayout
+            android:id="@+id/AAKARFODLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ADDACREGUNTHELAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_AAKAR"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_AAKAR"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_AAKAR"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_AAKAR"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="AAKARFOD"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+        
+                  <RelativeLayout
+            android:id="@+id/LANDAREALAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AAKARFODLAYOUT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onMenuOptionClicked" 
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/btn_matchup"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.veer.bhumi.MyTextView
+                android:id="@+id/text_matchup"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_matchup"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_matchup"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="ARE TO ACRE GUNTHE'S"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibribold.ttf" />
+        </RelativeLayout>
+        </RelativeLayout>
+            
+        </ScrollView>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

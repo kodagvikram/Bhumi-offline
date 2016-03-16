@@ -1,0 +1,592 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#396094" >
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/icon_nevigation"
+                    android:textColor="@android:color/white"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/alluserstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="VASALEVAR SCALE IN 1:1000"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/applogoimage" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/myscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout" >
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/CLEARBTN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:text="CLEAR"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/jantritextview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@+id/CLEARBTN"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shortcutimage" />
+
+                <TextView
+                    android:id="@+id/jantritextview155"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jantritextview1"
+                    android:layout_centerHorizontal="true"
+                    android:text="(Milimeter)"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/MAZASHORTCUTTextview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/jantritextview155"
+                    android:layout_marginLeft="25dp"
+                    android:text="a"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/MAZASHORTCUTTextview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jantritextview155"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_toRightOf="@+id/MAZASHORTCUTTextview2"
+                    android:text="b"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/MAZASHORTCUTTextview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jantritextview155"
+                    android:layout_toRightOf="@+id/MAZASHORTCUTTextview1"
+                    android:text="c"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/MAZASHORTCUTTextview888"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/green_rounded_xml"
+                    android:layout_above="@+id/MAZASHORTCUTTextview4"
+                    android:layout_marginRight="7dp"
+                    android:text=" Are  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/MAZASHORTCUTTextview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/red_rounded_xml"
+                    android:layout_below="@+id/jantritextview155"
+                    android:layout_marginRight="7dp"
+                    android:text="Sq.m"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:id="@+id/ParentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/MAZASHORTCUTTextview4" >
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/Trainglebtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ParentLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_button_xml"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:text="TOTAL"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/HECTAREtextview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Trainglebtn"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/arrowimageview1"
+                    android:text="Output:"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <!-- ****************************************************** -->
+
+                <TextView
+                    android:id="@+id/HECTAREtextview20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Trainglebtn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Scale"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/HECTAREtextview21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/OUTPUTTRIANGLE"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/HECTAREtextview20"
+                    android:background="@drawable/green_rounded_xml"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:text="1 : 1000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/arrowimageview1"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/HECTAREtextview20"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/HECTAREtextview21"
+                    android:background="@drawable/arrowright" />
+
+                <EditText
+                    android:id="@+id/OUTPUTTRIANGLE"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/HECTAREtextview20"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@+id/HECTAREtextview22"
+                    android:layout_toRightOf="@+id/arrowimageview1"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/HECTAREtextview22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/OUTPUTTRIANGLE"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/HECTAREtextview20"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Are      "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/HECTAREtextview23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/OUTPUTTRIANGLE"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:text="1 :   500"
+                    android:background="@drawable/red_rounded_xml"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/arrowimageview2"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/OUTPUTTRIANGLE"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/HECTAREtextview23"
+                    android:background="@drawable/arrowright" />
+
+                <EditText
+                    android:id="@+id/OUTPUTTRIANGLE2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/OUTPUTTRIANGLE"
+                    android:layout_toLeftOf="@+id/HECTAREtextview22"
+                    android:layout_toRightOf="@+id/arrowimageview1"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/HECTAREtextview24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/OUTPUTTRIANGLE2"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/OUTPUTTRIANGLE"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Sq.m   "
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:id="@+id/newaddLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/OUTPUTTRIANGLE2" >
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1 :   300"
+                        android:background="@drawable/red_rounded_xml"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/arrowimageview3"
+                        android:layout_width="45dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/HECTAREtextview25"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/OUTPUTTRIANGLE3"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_toLeftOf="@+id/HECTAREtextview26"
+                        android:layout_toRightOf="@+id/arrowimageview3"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="05dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Sq.m   "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/newaddLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_below="@+id/newaddLayout1" >
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1 : 2000"
+                        android:background="@drawable/red_rounded_xml"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/arrowimageview4"
+                        android:layout_width="45dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/HECTAREtextview27"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/OUTPUTTRIANGLE4"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_toLeftOf="@+id/HECTAREtextview28"
+                        android:layout_toRightOf="@+id/arrowimageview4"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE4"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="05dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Are      "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                
+
+                <RelativeLayout
+                    android:id="@+id/newaddLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newaddLayout2"
+                     >
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE6"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        android:text="1 : 480   "
+                        android:background="@drawable/red_rounded_xml"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/arrowimageview6"
+                        android:layout_width="45dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/HECTAREtextview32"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/OUTPUTTRIANGLE6"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_toLeftOf="@+id/HECTAREtextview31"
+                        android:layout_toRightOf="@+id/arrowimageview6"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE6"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="05dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Sq.m   "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/newaddLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newaddLayout4" 
+                    >
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        android:text="1 : 600   "
+                        android:background="@drawable/red_rounded_xml"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/arrowimageview7"
+                        android:layout_width="45dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/HECTAREtextview33"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/OUTPUTTRIANGLE7"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_toLeftOf="@+id/HECTAREtextview34"
+                        android:layout_toRightOf="@+id/arrowimageview7"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE7"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="05dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Sq.m   "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/newaddLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newaddLayout5" >
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        android:text="1 Inch :\n20 Sakhali"
+                       android:background="@drawable/red_rounded_xml"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/arrowimageview5"
+                        android:layout_width="45dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/HECTAREtextview29"
+                        android:background="@drawable/arrowright" />
+
+                    <EditText
+                        android:id="@+id/OUTPUTTRIANGLE5"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_toLeftOf="@+id/HECTAREtextview30"
+                        android:layout_toRightOf="@+id/arrowimageview5"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/HECTAREtextview30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/OUTPUTTRIANGLE5"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="05dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Are      "
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+                
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>
